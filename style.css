@@ -55,10 +55,24 @@ body{
 }
 .header {
     height: 60vh !important;
-    background: url(img/fondo.jpg) no-repeat center;
+    background: url(img/fond.jpg!d) no-repeat center;
     background-size: cover;
 
 }
 .title{
-    margin-bottom: 40px
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+p{
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+.content{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
