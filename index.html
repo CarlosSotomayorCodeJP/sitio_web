@@ -3,44 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
-    <title>MI PAGINA</title>
+    <title>Mi_pagina_web</title>
 </head>
 <body>
-    <h1>Bienvenidos</h1>
-    <div class="head"> 
+
+    <!-- Sección de navegación -->
+    <nav>
         <div class="logo">
-            <a href="a">Logo</a>
+            <h1>Inicio</h1>
         </div>
-        <ol class="navbar">
-            <a href="#">PERFIL</a>
-            <a href="#">MAS SOBRE MI</a>
-            <a href="#">ASPIRACIONES</a>
+        <ul>
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
 
-        </ol>
-    </div>
-    <header class="content header">
-        <h2 class="title">Inicio</h2>
-        <p>
-            Hola, mi nombre es Carlos Manuel Sotomayor Beltran, soy estudiante de la carrera de ingenieria informatica de la Facultad Nacional de Ingenieria, interesado en lenguajes de programación, ciberseguridad, redes e implementación de soluciones duradesras.
-
-        </p>
+    <!-- Sección de bienvenida -->
+    <header>
+        <h1>Hola, soy Carlos Sotomayor</h1>
+        <p>Estudiante de Ingenieria informatica</p>
+        <a href="#projects" class="btn">Ver mis proyectos</a>
     </header>
-   
-    <section class="content contact">
-        <h2 class="title">Contactos</h2>
-        <h3>Redes y contactos:</h3>
-                <figure><img src="img/gmail.jpeg" height="35px" width="35px" alt="correo:"></figure>                        
-                <p>carlosmanuelsotomayorbeltran@gmail.com</p>
-                <figure><img src="img/whatsapp.jpg" height="35px" width="35px" alt="whatsapp:"></figure>        
-                <p>+591 69577201</p>
-                <figure><img src="img/github.png" height="35px" width="35px" alt="github:"></figure>      
-                <p>CarlosSotomayorCodeJP</p>
-                <figure><img src="img/youtube.jpeg" height="35px" width="35px" alt="youtube:"></figure>                        
-                <p>Gaussian Code</p>
-        </div>
 
+    <!-- Sección sobre mí -->
+    <section id="about">
+        <h2>Sobre mi</h2>
+        <p>Soy estudiante de la carrera de ingenieria informatica de la Facultad Nacional de Ingenieria,
+            interesado en lenguajes de programación, ciberseguridad, redes e implementación de soluciones 
+            duradesras.</p>
+        <p>Actualmente estoy buscando desarrollarme en el mundo de la ciberseguridad y pesting</p>
+        <p>Tengo experiencia en Desarrollo web con Django, Python y Java.</p>
     </section>
+
+    <!-- Sección de proyectos -->
+    <section id="projects">
+        <h2>Mis Proyectos</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <p>Pagina web con Django.</p>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <p>Sistema de ventas JAVA.</p>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+            <div class="project">
+                <h3>Proyecto 3</h3>
+                <p>Sistema Bancario PYTHON.</p>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Gracias por ingresar a mi pagina</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
