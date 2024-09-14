@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: #1b1a1ad3;
 }
 
 /* Navegación */
@@ -12,7 +12,7 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: #333;
-    padding: 15px;
+    padding: 10px;
 }
 
 nav .logo h1 {
@@ -71,10 +71,10 @@ header .btn {
 #about {
     padding: 50px;
     background-color: #62a5dc;
-    text-align: center;
+    text-align: justify;
 }
 .yo{
-    text-align: justify;
+    text-align: center;
 }
 
 #about h2 {
@@ -84,7 +84,7 @@ header .btn {
 /* Sección Proyectos */
 #projects {
     padding: 50px;
-    background-color: #f4f4f4;
+    background-color: #b2d9e8d8;
     text-align: center;
 }
 
@@ -120,8 +120,8 @@ header .btn {
 /* Sección Contacto */
 #contact {
     padding: 50px;
-    background-color: #fff;
-    text-align: center;
+    background-color: #dde4e8de;
+    text-align: justify;
 }
 
 form {
