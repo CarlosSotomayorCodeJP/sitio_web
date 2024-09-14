@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lucida Bright', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -35,14 +35,22 @@ nav ul li a {
 
 /* Sección de encabezado */
 header {
-    background-color: #211b94;
+    background-color: #3e8ed3;
     color: white;
     padding: 100px 0;
     text-align: center;
 }
+.circulo{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid rgb(43, 51, 110);
+}
 
 header h1 {
     font-size: 3em;
+
 }
 
 header p {
@@ -62,8 +70,11 @@ header .btn {
 /* Sección Sobre mí */
 #about {
     padding: 50px;
-    background-color: #fff;
+    background-color: #62a5dc;
     text-align: center;
+}
+.yo{
+    text-align: justify;
 }
 
 #about h2 {
@@ -99,8 +110,8 @@ header .btn {
 
 .project .btn {
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #d1f0d2;
+    color: rgb(51, 158, 76);
     text-decoration: none;
     border: none;
     cursor: pointer;
