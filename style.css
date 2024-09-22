@@ -290,21 +290,21 @@ header .btn {
     position: absolute;
     top: 40%;
     background-color: #252A2E;
-    padding: 70px;
+    padding: 40px;
     max-width: 350px;
-    left: 50%;
+    left: 70%;
     transform: translate(-50%, -50%);
 }
 .contacto .col .info ul{
     list-style: none;
 }
 .contacto .col .info ul li{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .contacto .col .info ul li i{
     color: #1CB698;
-    display: inline-flex;
-    margin-right: 10px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 /* Pie de página */
