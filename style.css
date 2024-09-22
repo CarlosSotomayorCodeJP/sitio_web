@@ -196,6 +196,9 @@ header .btn {
     position: relative;
     bottom: 4px;
 }
+.informacion{
+    text-align: justify;
+}
 
 /* Sección Proyectos */
 #projects {
