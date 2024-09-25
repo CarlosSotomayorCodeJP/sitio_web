@@ -283,6 +283,19 @@ header .btn {
     position: relative;
     z-index: 10;
 }
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
 .contacto .col img{
     width: 100%;
 }
