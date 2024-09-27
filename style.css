@@ -320,11 +320,11 @@ header .btn {
     margin-right: 20px;
 }
 .resolucion {
-    width: 0%;
+    width: 99%;
     text-align: center;
 }
 
-/*Formatos de pantalla*/
+
 /**Movil**/
 
 @media (max-width: 767px) {
