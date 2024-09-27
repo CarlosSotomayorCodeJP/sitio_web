@@ -1,4 +1,27 @@
-/* Estilos generales */
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+    header, footer {
+        padding: 0.5em 0;
+    }
+
+    main {
+        padding: 0.5em;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    main {
+        padding: 2em;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1025px) {
+    main {
+        padding: 3em;
+    }
+}
 body {
     font-family: 'Lucida Bright', sans-serif;
     margin: 0;
@@ -318,46 +341,6 @@ header .btn {
     color: #1CB698;
     display: inline-block;
     margin-right: 20px;
-}
-.resolucion {
-    width: 99%;
-    text-align: center;
-}
-
-
-/**Movil**/
-
-@media (max-width: 767px) {
-    .desktop {
-        display: none;
-    }
-    .tablet {
-        display: none;
-    }
-}
-
-
-/**Tablet**/
-
-@media (min-width: 768px) and (max-width: 990px) {
-    .desktop {
-        display: none;
-    }
-    .movil {
-        display: none;
-    }
-}
-
-
-/**Escritorio**/
-
-@media (min-width: 991px) {
-    .tablet {
-        display: none;
-    }
-    .movil {
-        display: none;
-    }
 }
 /* Pie de página */
 footer{
