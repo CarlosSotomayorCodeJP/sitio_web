@@ -103,8 +103,8 @@ header .btn {
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
 }
+
 .imagenes{   
     display: inline-flex;
     width: 600px;
@@ -114,11 +114,30 @@ header .btn {
 .imagenes img{
     width: 30%;
     flex-grow: 1;
-    object-fit: scale-down;
+    object-fit: fill;
     opacity: .8;
     transition: .5s ease;
 }
 .imagenes img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.amigos{   
+    display: inline-flex;
+    width: 600px;
+    height: 430px;
+    padding: 50px 20px;
+}
+.amigos img{
+    width: 45%;
+    flex-grow: 1;
+    object-fit: contain;
+    opacity: .8;
+    transition: .5s ease;
+}
+.amigos img:hover{
     cursor: crosshair;
     width: 300px;
     opacity: 1;
