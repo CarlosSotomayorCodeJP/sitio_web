@@ -104,7 +104,6 @@ header .btn {
     text-align: center;
     padding: 20px 0;
 }
-
 .imagenes{   
     display: inline-flex;
     width: 600px;
@@ -114,11 +113,30 @@ header .btn {
 .imagenes img{
     width: 30%;
     flex-grow: 1;
-    object-fit: fill;
+    object-fit: scale-down;
     opacity: .8;
     transition: .5s ease;
 }
 .imagenes img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.mascotas{   
+    display: inline-flex;
+    width: 700px;
+    height: 430px;
+    padding: 50px 20px;
+}
+.mascotas img{
+    width: 32%;
+    flex-grow: 1;
+    object-fit: scale-down;
+    opacity: .8;
+    transition: .5s ease;
+}
+.mascotas img:hover{
     cursor: crosshair;
     width: 300px;
     opacity: 1;
@@ -133,7 +151,7 @@ header .btn {
 .amigos img{
     width: 45%;
     flex-grow: 1;
-    object-fit: contain;
+    object-fit: scale-down;
     opacity: .8;
     transition: .5s ease;
 }
