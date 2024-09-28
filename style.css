@@ -1,7 +1,4 @@
-*{
-    box-sizing: border-box;
 
-}
 html{
     scroll-behavior: smooth;
 }
@@ -99,6 +96,33 @@ header .btn {
 }
 #about h2 {
     font-size: 2.5em;
+}
+/*Sección galeria*/
+.tit h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.imagenes{   
+    display: inline-flex;
+    width: 600px;
+    height: 430px;
+    padding: 50px 20px;
+}
+.imagenes img{
+    width: 30%;
+    flex-grow: 1;
+    object-fit: scale-down;
+    opacity: .8;
+    transition: .5s ease;
+}
+.imagenes img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
 /* Sección curriculum */
 .curriculum{
@@ -227,7 +251,7 @@ header .btn {
     background-color: #252A2E;
     padding: 20px;
     border: 1px solid #889b99;
-    width: 30%;
+    width: 35%;
 }
 
 .project h3 {
