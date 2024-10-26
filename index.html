@@ -12,23 +12,26 @@
 <body>
 
     <!-- Sección de navegación -->
-    <nav>
-        <div class="logo">
-            <h1>Inicio</h1>
+        <nav id="nav">
+            <div class="logo">
+                <h1>Inicio</h1>
+            </div>
+            <ul>
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
         </div>
-        <ul>
-            <li><a href="#about">Sobre mi</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-
     <!-- Sección de bienvenida -->
     <header>
         <h1>Hola, soy Carlos Sotomayor</h1>
         <figure><img src="img/yo.jpg" class="circulo" height="200px" width="200px" alt="yo"></figure>
         <p>Estudiante de Ingeniería Informática</p>
         <a href="#projects" class="btn">Ver mis proyectos</a>
+        
     </header>
 
     <!-- Sección sobre mí -->
