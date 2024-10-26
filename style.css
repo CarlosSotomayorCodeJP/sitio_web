@@ -67,14 +67,38 @@ header p {
     font-size: 1.5em;
 }
 
-header .btn {
-    padding: 10px 20px;
-    background-color: #4d5b8a;
+header .cv {
     color: #faf9f8;
-    border: 1px solid #9cb3ab;
     cursor: pointer;
-    margin-top: 20px;
     text-decoration: none;
+}
+.cv button{
+    
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    text-decoration: none;
+}
+.cv button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #94967c;
+    z-index: -1;
+    transition: 1s;
+}
+.cv button:hover .overlay{
+    width: 100%;
 }
 
 /* Sección Sobre mí */
@@ -167,6 +191,71 @@ header .btn {
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
+}
+@media screen and (max-width: 700px){
+    .tit h2{
+        font-size: 48px;
+        font-family: 'Righteous';
+        text-align: center;
+        padding: 20px 0;
+    }
+    .imagenes{   
+        display: inline-flex;
+        width: 600px;
+        height: 430px;
+        padding: 50px 20px;
+    }
+    .imagenes img{
+        width: 30%;
+        flex-grow: 1;
+        object-fit: scale-down;
+        opacity: .8;
+        transition: .5s ease;
+    }
+    .imagenes img:hover{
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    .mascotas{   
+        display: inline-flex;
+        width: 700px;
+        height: 430px;
+        padding: 50px 20px;
+    }
+    .mascotas img{
+        width: 32%;
+        flex-grow: 1;
+        object-fit: scale-down;
+        opacity: .8;
+        transition: .5s ease;
+    }
+    .mascotas img:hover{
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    .amigos{   
+        display: inline-flex;
+        width: 600px;
+        height: 430px;
+        padding: 50px 20px;
+    }
+    .amigos img{
+        width: 45%;
+        flex-grow: 1;
+        object-fit: scale-down;
+        opacity: .8;
+        transition: .5s ease;
+    }
+    .amigos img:hover{
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
 }
 /* Sección curriculum */
 .curriculum{
