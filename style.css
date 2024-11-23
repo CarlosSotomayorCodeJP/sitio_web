@@ -128,135 +128,69 @@ header .cv {
 #about h2 {
     font-size: 2.5em;
 }
-/*Sección galeria*/
-.tit h2{
+.tit h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.imagenes{   
-    display: inline-flex;
-    width: 600px;
-    height: 430px;
+
+.imagenes,
+.mascotas,
+.amigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 50px 20px;
+    gap: 10px; /* Añade espacio entre las imágenes */
 }
-.imagenes img{
+
+.imagenes img,
+.mascotas img,
+.amigos img {
     width: 30%;
+    max-width: 200px; /* Fija un ancho máximo para las imágenes */
     flex-grow: 1;
-    object-fit: scale-down;
+    object-fit: cover; /* Ajusta la imagen al contenedor */
     opacity: .8;
     transition: .5s ease;
+    cursor: pointer;
 }
-.imagenes img:hover{
-    cursor: crosshair;
-    width: 300px;
+
+/* Estilo al pasar el puntero */
+.imagenes img:hover,
+.mascotas img:hover,
+.amigos img:hover,
+.imagenes img:focus,
+.mascotas img:focus,
+.amigos img:focus {
+    width: 60%; /* Aumenta el tamaño de la imagen al pasar el puntero o hacer clic */
     opacity: 1;
     filter: contrast(120%);
 }
-.mascotas{   
-    display: inline-flex;
-    width: 700px;
-    height: 430px;
-    padding: 50px 20px;
-}
-.mascotas img{
-    width: 32%;
-    flex-grow: 1;
-    object-fit: scale-down;
-    opacity: .8;
-    transition: .5s ease;
-}
-.mascotas img:hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-}
-.amigos{   
-    display: inline-flex;
-    width: 600px;
-    height: 430px;
-    padding: 50px 20px;
-}
-.amigos img{
-    width: 45%;
-    flex-grow: 1;
-    object-fit: scale-down;
-    opacity: .8;
-    transition: .5s ease;
-}
-.amigos img:hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-}
-@media screen and (max-width: 700px){
-    .tit h2{
-        font-size: 48px;
-        font-family: 'Righteous';
-        text-align: center;
-        padding: 20px 0;
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 700px) {
+    .tit h2 {
+        font-size: 36px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+        padding: 10px 0;
     }
-    .imagenes{   
-        display: inline-flex;
-        width: 600px;
-        height: 430px;
-        padding: 50px 20px;
+
+    .imagenes,
+    .mascotas,
+    .amigos {
+        padding: 20px 10px;
     }
-    .imagenes img{
-        width: 30%;
-        flex-grow: 1;
-        object-fit: scale-down;
-        opacity: .8;
-        transition: .5s ease;
-    }
-    .imagenes img:hover{
-        cursor: crosshair;
-        width: 300px;
-        opacity: 1;
-        filter: contrast(120%);
-    }
-    .mascotas{   
-        display: inline-flex;
-        width: 700px;
-        height: 430px;
-        padding: 50px 20px;
-    }
-    .mascotas img{
-        width: 32%;
-        flex-grow: 1;
-        object-fit: scale-down;
-        opacity: .8;
-        transition: .5s ease;
-    }
-    .mascotas img:hover{
-        cursor: crosshair;
-        width: 300px;
-        opacity: 1;
-        filter: contrast(120%);
-    }
-    .amigos{   
-        display: inline-flex;
-        width: 600px;
-        height: 430px;
-        padding: 50px 20px;
-    }
-    .amigos img{
-        width: 45%;
-        flex-grow: 1;
-        object-fit: scale-down;
-        opacity: .8;
-        transition: .5s ease;
-    }
-    .amigos img:hover{
-        cursor: crosshair;
-        width: 300px;
-        opacity: 1;
-        filter: contrast(120%);
+
+    .imagenes img,
+    .mascotas img,
+    .amigos img {
+        width: 100%; /* Imágenes a ancho completo en pantallas pequeñas */
+        max-width: 100%;
+        height: auto;
     }
 }
+
 /* Sección curriculum */
 .curriculum{
     background-color: #38477e;
