@@ -157,6 +157,8 @@ header .cv {
     transition: transform 0.5s ease, opacity 0.5s ease, z-index 0.5s ease; /* Añade transición para z-index */
     cursor: pointer;
     position: relative; /* Añade posición relativa */
+    border-radius: 15px; /* Añade esquinas ovaladas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra */
 }
 
 /* Estilo al pasar el puntero o hacer clic */
@@ -166,14 +168,14 @@ header .cv {
 .imagenes img:focus,
 .mascotas img:focus,
 .amigos img:focus {
-    transform: scale(1.5); 
+    transform: scale(1.1); 
     opacity: 1;
     filter: contrast(120%);
     z-index: 10; 
 }
 
 /* Media query para pantallas pequeñas */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     .tit h2 {
         font-size: 36px; /* Reduce el tamaño de la fuente para pantallas pequeñas */
         padding: 10px 0;
@@ -193,6 +195,7 @@ header .cv {
         height: auto;
     }
 }
+
 
 /* Sección curriculum */
 .curriculum{
