@@ -338,33 +338,32 @@ header .cv {
 }
 
 /* Sección Contacto */
-#contacto{
+#contacto {
     padding: 100px;
 }
-.contacto{
+.contacto {
     background-color: #38477e;
     color: #faf9f8;
-    
 }
-.contacto .contenido-seccion{
+.contacto .contenido-seccion {
     max-width: 1000px;
     margin: auto;
 }
-.contacto h2{
+.contacto h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.contacto .fila{
+.contacto .fila {
     display: flex;
 }
-.contacto .col{
+.contacto .col {
     width: 70%;
     padding: 100px;
     position: relative;
 }
-.contacto .col input, .contacto .col textarea{
+.contacto .col input, .contacto .col textarea {
     display: block;
     width: 100%;
     padding: 18px;
@@ -374,7 +373,7 @@ header .cv {
     color: #faf9f8;
     font-size: 18px;
 }
-.contacto button{
+.contacto button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #faf9f8;
@@ -387,7 +386,7 @@ header .cv {
     position: relative;
     z-index: 10;
 }
-.contacto button .overlay{
+.contacto button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -397,13 +396,13 @@ header .cv {
     z-index: -1;
     transition: 1s;
 }
-.contacto button:hover .overlay{
+.contacto button:hover .overlay {
     width: 100%;
 }
-.contacto .col img{
+.contacto .col img {
     width: 100%;
 }
-.contacto .col .info{
+.contacto .col .info {
     position: absolute;
     top: 40%;
     background-color: #252A2E;
@@ -412,17 +411,53 @@ header .cv {
     left: 70%;
     transform: translate(-50%, -50%);
 }
-.contacto .col .info ul{
+.contacto .col .info ul {
     list-style: none;
 }
-.contacto .col .info ul li{
+.contacto .col .info ul li {
     margin-bottom: 20px;
 }
-.contacto .col .info ul li i{
+.contacto .col .info ul li i {
     color: #1CB698;
     display: inline-block;
     margin-right: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+    .contacto .fila {
+        flex-direction: column;
+    }
+    .contacto .col {
+        width: 100%;
+        padding: 50px 20px;
+    }
+    .contacto h2 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contacto {
+        padding: 50px 20px;
+    }
+    .contacto h2 {
+        font-size: 28px;
+    }
+    .contacto .col {
+        padding: 20px;
+    }
+    .contacto .col .info {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        max-width: 100%;
+    }
+    .contacto button {
+        width: 100%;
+    }
+}
+
 
 /* Pie de página */
 footer {
@@ -512,7 +547,7 @@ footer .arriba {
 }
 
 /*SECCION RESPONSIVE*/
-@media screen and (max-width:980px){
+@media screen and (max-width:1024px){
     nav{
         display: none;
     }
@@ -535,7 +570,7 @@ footer .arriba {
         padding: 10px 0;
     }
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:768px){
     .sobremi .fila{
         display: block;
     }
@@ -559,14 +594,9 @@ footer .arriba {
     .portfolio .galeria .proyecto{
         max-width: 100%;
     }
-    .contacto .fila{
-        display: block;
-    }
-    .contacto .fila .col{
-        width: 100%;
-    }
+
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     .proyecto a {
         width: 30px;  
         height: 30px;
