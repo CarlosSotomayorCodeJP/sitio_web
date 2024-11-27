@@ -6,7 +6,7 @@ body {
     font-family: 'Lucida Bright', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #38477e;
+    background-color: #9E2A2B;
     color:#faf9f8;
 }
 
@@ -15,12 +15,12 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color:#283358;
+    background-color:#540B0E;
     padding: 20px 10px;
 }
 
 nav .logo h1 {
-    color: #faf9f8;
+    color: #E09F3E;
 }
 
 nav ul {
@@ -33,11 +33,11 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #faf9f8;
+    color: #E09F3E;
     text-decoration: none;
 }
 .nav-responsive{
-    background-color: #283358;
+    background-color: #540B0E;
     color: #fff;
     padding: 20px 10px;
     cursor: pointer;
@@ -45,7 +45,6 @@ nav ul li a {
 }
 /* Sección de encabezado */
 header {
-    background-color: #38477e;
     color: #faf9f8;
     padding: 100px 0;
     text-align: center;
@@ -59,6 +58,7 @@ header {
 }
 
 header h1 {
+    color: #FFF3B0;
     font-size: 3em;
 
 }
@@ -104,12 +104,11 @@ header .cv {
 /* Sección Sobre mí */
 #about {
     padding: 50px;
-    background-color: #38477e;
     text-align: justify;
     color: #f0f2f1;
 }
 #about h3{
-    color:  #faf9f8;
+    color:  #FFF3B0;
     font-size: 1.7em;
 }
 .yo{
@@ -118,14 +117,15 @@ header .cv {
 }
 .btn {
     padding: 10px 20px;
-    background-color: #4d5b8a;
-    color: #faf9f8;
-    border: 1px solid #9cb3ab;
+    background-color: #9E2A2B;
+    color: #FFF3B0;
+    border: 1px solid #FFF3B0;
     cursor: pointer;
     margin-top: 20px;
     text-decoration: none;
 }
 #about h2 {
+    color:  #FFF3B0;
     font-size: 2.5em;
 }
 /* Seccion galeria */
@@ -199,7 +199,6 @@ header .cv {
 
 /* Sección curriculum */
 .curriculum{
-    background-color: #38477e;
     color: #faf9f8;
     padding: 50px 20px;
 }
@@ -310,7 +309,6 @@ header .cv {
 /* Sección Proyectos */
 #projects {
     padding: 50px;
-    background-color: #38477e;
     text-align: center;
     color: #faf9f8;
 }
@@ -345,7 +343,6 @@ header .cv {
     padding: 100px;
 }
 .contacto {
-    background-color: #38477e;
     color: #faf9f8;
 }
 .contacto .contenido-seccion {
@@ -379,13 +376,13 @@ header .cv {
 .contacto button {
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #faf9f8;
+    border: 2px solid #E09F3E;
     width: fit-content;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #faf9f8;
+    color: #E09F3E;
     position: relative;
     z-index: 10;
 }
@@ -395,7 +392,7 @@ header .cv {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #94967c;
+    background-color: #FFF3B0;
     z-index: -1;
     transition: 1s;
 }
@@ -464,8 +461,8 @@ header .cv {
 
 /* Pie de página */
 footer {
-    background-color: #283358;
-    color: #fff;
+    background-color: #540B0E;
+    color: #E09F3E;
     padding: 30px 0;
     text-align: center;
     position: relative;
@@ -480,10 +477,10 @@ footer .redes {
 }
 
 footer .redes a {
-    color: #fff;
+    color: #E09F3E;
     display: inline-block;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: 1px solid #E09F3E;
     border-radius: 100%;
     width: 42px;
     height: 42px;
@@ -562,7 +559,7 @@ footer .arriba {
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #db007c;
+        background-color:#540B0E ;
         width: 180px;
     }
     nav.responsive ul{
